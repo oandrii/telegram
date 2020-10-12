@@ -1,0 +1,373 @@
+[12-Oct-2020 12:11:32 UTC] Enabled PHP logging
+[12-Oct-2020 12:11:32 UTC] Enabled PHP logging
+[12-Oct-2020 12:11:32 UTC] Enabled PHP logging
+[12-Oct-2020 12:12:03 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/tgseclib/phpseclib/Math/BigInteger/Engines/PHP/Reductions/EvalBarrett.php(155) : eval()'d code on line 92
+[12-Oct-2020 12:12:03 UTC] PHP Stack trace:
+[12-Oct-2020 12:12:03 UTC] PHP   1. {main}() /home/daniel/PhpstormProjects/oandr/telegram/web/index.php:0
+[12-Oct-2020 12:12:03 UTC] PHP   2. yii\web\Application->run() /home/daniel/PhpstormProjects/oandr/telegram/web/index.php:12
+[12-Oct-2020 12:12:03 UTC] PHP   3. yii\web\Application->handleRequest() /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/base/Application.php:386
+[12-Oct-2020 12:12:03 UTC] PHP   4. yii\web\Application->runAction() /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/web/Application.php:103
+[12-Oct-2020 12:12:03 UTC] PHP   5. app\controllers\TelegramController->runAction() /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/base/Module.php:528
+[12-Oct-2020 12:12:03 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/base/Controller.php:180
+[12-Oct-2020 12:12:03 UTC] PHP   7. call_user_func_array:{/home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/base/InlineAction.php:57
+[12-Oct-2020 12:12:03 UTC] PHP   8. app\controllers\TelegramController->actionIndex() /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/base/InlineAction.php:57
+[12-Oct-2020 12:12:03 UTC] PHP   9. app\controllers\TelegramController->render() /home/daniel/PhpstormProjects/oandr/telegram/controllers/TelegramController.php:24
+[12-Oct-2020 12:12:03 UTC] PHP  10. yii\web\View->render() /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/base/Controller.php:409
+[12-Oct-2020 12:12:03 UTC] PHP  11. yii\web\View->renderFile() /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/base/View.php:156
+[12-Oct-2020 12:12:03 UTC] PHP  12. yii\web\View->renderPhpFile() /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/base/View.php:257
+[12-Oct-2020 12:12:03 UTC] PHP  13. require() /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/base/View.php:348
+[12-Oct-2020 12:12:03 UTC] PHP  14. danog\MadelineProto\API->start() /home/daniel/PhpstormProjects/oandr/telegram/views/telegram/index.php:24
+[12-Oct-2020 12:12:03 UTC] PHP  15. danog\MadelineProto\API->__call() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/InternalDoc.php:5953
+[12-Oct-2020 12:12:03 UTC] PHP  16. danog\MadelineProto\Tools::wait() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/AbstractAPIFactory.php:126
+[12-Oct-2020 12:12:03 UTC] PHP  17. Amp\Loop::run() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/Tools.php:305
+[12-Oct-2020 12:12:03 UTC] PHP  18. Amp\Loop\NativeDriver->run() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/amphp/amp/lib/Loop.php:95
+[12-Oct-2020 12:12:03 UTC] PHP  19. Amp\Loop\NativeDriver->tick() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/amphp/amp/lib/Loop/Driver.php:72
+[12-Oct-2020 12:12:03 UTC] PHP  20. danog\MadelineProto\Connection->handleMessages() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/amphp/amp/lib/Loop/Driver.php:119
+[12-Oct-2020 12:12:03 UTC] PHP  21. danog\MadelineProto\Connection->handleResponse() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/MTProtoSession/ResponseHandler.php:259
+[12-Oct-2020 12:12:03 UTC] PHP  22. danog\MadelineProto\Tools::callFork() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/MTProtoSession/ResponseHandler.php:531
+[12-Oct-2020 12:12:03 UTC] PHP  23. danog\MadelineProto\Coroutine->__construct() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/Tools.php:418
+[12-Oct-2020 12:12:03 UTC] PHP  24. Generator->current() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/Coroutine.php:70
+[12-Oct-2020 12:12:03 UTC] PHP  25. danog\MadelineProto\Connection->danog\MadelineProto\MTProtoSession\{closure:phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/MTProtoSession/ResponseHandler.php:512-531}() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/Coroutine.php:70
+[12-Oct-2020 12:12:03 UTC] PHP  26. Amp\Deferred->resolve() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/MTProtoSession/ResponseHandler.php:523
+[12-Oct-2020 12:12:03 UTC] PHP  27. {anonymous-class:phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/amphp/amp/lib/Deferred.php:20-25}->resolve() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/amphp/amp/lib/Deferred.php:48
+[12-Oct-2020 12:12:03 UTC] PHP  28. danog\MadelineProto\Coroutine->danog\MadelineProto\{closure:phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/Coroutine.php:102-154}() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/amphp/amp/lib/Internal/Placeholder.php:149
+[12-Oct-2020 12:12:03 UTC] PHP  29. Generator->send() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/Coroutine.php:116
+[12-Oct-2020 12:12:03 UTC] PHP  30. danog\MadelineProto\MTProto->createAuthKey() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/Coroutine.php:116
+[12-Oct-2020 12:12:03 UTC] PHP  31. tgseclib\Math\BigInteger->powMod() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/MTProtoTools/AuthKeyHandler.php:292
+[12-Oct-2020 12:12:03 UTC] PHP  32. tgseclib\Math\BigInteger\Engines\PHP64->powMod() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/tgseclib/phpseclib/Math/BigInteger.php:438
+[12-Oct-2020 12:12:03 UTC] PHP  33. tgseclib\Math\BigInteger\Engines\PHP64->powModOuter() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/tgseclib/phpseclib/Math/BigInteger/Engines/PHP64.php:344
+[12-Oct-2020 12:12:03 UTC] PHP  34. tgseclib\Math\BigInteger\Engines\PHP64->powModInner() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/tgseclib/phpseclib/Math/BigInteger/Engines/Engine.php:583
+[12-Oct-2020 12:12:03 UTC] PHP  35. tgseclib\Math\BigInteger\Engines\PHP\Base::powModHelper() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/tgseclib/phpseclib/Math/BigInteger/Engines/PHP.php:970
+[12-Oct-2020 12:12:03 UTC] PHP  36. tgseclib\Math\BigInteger\Engines\Engine::slidingWindow() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/tgseclib/phpseclib/Math/BigInteger/Engines/PHP/Base.php:103
+[12-Oct-2020 12:12:03 UTC] PHP  37. tgseclib\Math\BigInteger\Engines\PHP\Base::squareReduce() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/tgseclib/phpseclib/Math/BigInteger/Engines/Engine.php:637
+[12-Oct-2020 12:12:03 UTC] PHP  38. tgseclib\Math\BigInteger\Engines\PHP\Reductions\EvalBarrett::reduce() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/tgseclib/phpseclib/Math/BigInteger/Engines/PHP/Base.php:147
+[12-Oct-2020 12:12:03 UTC] PHP  39. tgseclib\Math\BigInteger\Engines\PHP\Reductions\EvalBarrett::{closure:phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/tgseclib/phpseclib/Math/BigInteger/Engines/PHP/Reductions/EvalBarrett.php(155) : eval()'d code:1-944}() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/tgseclib/phpseclib/Math/BigInteger/Engines/PHP/Reductions/EvalBarrett.php:51
+[12-Oct-2020 12:12:03 UTC] PHP Fatal error:  Uncaught ReflectionException: Class {anonymous-class:phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/amphp/amp/lib/Deferred.php:20-25} does not exist in /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/web/ErrorHandler.php:207
+Stack trace:
+#0 /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/web/ErrorHandler.php(207): ReflectionClass->__construct()
+#1 /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(36): yii\web\ErrorHandler->addTypeLinks()
+#2 /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/web/ErrorHandler.php(262): require('/home/daniel/Ph...')
+#3 /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/web/ErrorHandler.php(323): yii\web\ErrorHandler->renderFile()
+#4 /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/web/ErrorHandler.php(346): yii\web\ErrorHandler->renderCallStackItem()
+#5 /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/view in /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/web/ErrorHandler.php on line 207
+[12-Oct-2020 12:12:03 UTC] PHP Stack trace:
+[12-Oct-2020 12:12:03 UTC] PHP   1. {main}() /home/daniel/PhpstormProjects/oandr/telegram/web/index.php:0
+[12-Oct-2020 12:12:03 UTC] PHP   2. yii\web\Application->run() /home/daniel/PhpstormProjects/oandr/telegram/web/index.php:12
+[12-Oct-2020 12:12:03 UTC] PHP   3. yii\web\Application->handleRequest() /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/base/Application.php:386
+[12-Oct-2020 12:12:03 UTC] PHP   4. yii\web\Application->runAction() /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/web/Application.php:103
+[12-Oct-2020 12:12:03 UTC] PHP   5. app\controllers\TelegramController->runAction() /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/base/Module.php:528
+[12-Oct-2020 12:12:03 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/base/Controller.php:180
+[12-Oct-2020 12:12:03 UTC] PHP   7. call_user_func_array:{/home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/base/InlineAction.php:57
+[12-Oct-2020 12:12:03 UTC] PHP   8. app\controllers\TelegramController->actionIndex() /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/base/InlineAction.php:57
+[12-Oct-2020 12:12:03 UTC] PHP   9. app\controllers\TelegramController->render() /home/daniel/PhpstormProjects/oandr/telegram/controllers/TelegramController.php:24
+[12-Oct-2020 12:12:03 UTC] PHP  10. yii\web\View->render() /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/base/Controller.php:409
+[12-Oct-2020 12:12:03 UTC] PHP  11. yii\web\View->renderFile() /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/base/View.php:156
+[12-Oct-2020 12:12:03 UTC] PHP  12. yii\web\View->renderPhpFile() /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/base/View.php:257
+[12-Oct-2020 12:12:03 UTC] PHP  13. require() /home/daniel/PhpstormProjects/oandr/telegram/vendor/yiisoft/yii2/base/View.php:348
+[12-Oct-2020 12:12:03 UTC] PHP  14. danog\MadelineProto\API->start() /home/daniel/PhpstormProjects/oandr/telegram/views/telegram/index.php:24
+[12-Oct-2020 12:12:03 UTC] PHP  15. danog\MadelineProto\API->__call() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/InternalDoc.php:5953
+[12-Oct-2020 12:12:03 UTC] PHP  16. danog\MadelineProto\Tools::wait() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/AbstractAPIFactory.php:126
+[12-Oct-2020 12:12:03 UTC] PHP  17. Amp\Loop::run() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/Tools.php:305
+[12-Oct-2020 12:12:03 UTC] PHP  18. Amp\Loop\NativeDriver->run() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/amphp/amp/lib/Loop.php:95
+[12-Oct-2020 12:12:03 UTC] PHP  19. Amp\Loop\NativeDriver->tick() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/amphp/amp/lib/Loop/Driver.php:72
+[12-Oct-2020 12:12:03 UTC] PHP  20. danog\MadelineProto\Connection->handleMessages() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/amphp/amp/lib/Loop/Driver.php:119
+[12-Oct-2020 12:12:03 UTC] PHP  21. danog\MadelineProto\Connection->handleResponse() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/MTProtoSession/ResponseHandler.php:259
+[12-Oct-2020 12:12:03 UTC] PHP  22. danog\MadelineProto\Tools::callFork() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/MTProtoSession/ResponseHandler.php:531
+[12-Oct-2020 12:12:03 UTC] PHP  23. danog\MadelineProto\Coroutine->__construct() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/Tools.php:418
+[12-Oct-2020 12:12:03 UTC] PHP  24. Generator->current() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/Coroutine.php:70
+[12-Oct-2020 12:12:03 UTC] PHP  25. danog\MadelineProto\Connection->danog\MadelineProto\MTProtoSession\{closure:phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/MTProtoSession/ResponseHandler.php:512-531}() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/Coroutine.php:70
+[12-Oct-2020 12:12:03 UTC] PHP  26. Amp\Deferred->resolve() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/MTProtoSession/ResponseHandler.php:523
+[12-Oct-2020 12:12:03 UTC] PHP  27. {anonymous-class:phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/amphp/amp/lib/Deferred.php:20-25}->resolve() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/amphp/amp/lib/Deferred.php:48
+[12-Oct-2020 12:12:03 UTC] PHP  28. danog\MadelineProto\Coroutine->danog\MadelineProto\{closure:phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/Coroutine.php:102-154}() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/amphp/amp/lib/Internal/Placeholder.php:149
+[12-Oct-2020 12:12:03 UTC] PHP  29. Generator->send() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/Coroutine.php:116
+[12-Oct-2020 12:12:03 UTC] PHP  30. danog\MadelineProto\MTProto->createAuthKey() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/Coroutine.php:116
+[12-Oct-2020 12:12:03 UTC] PHP  31. tgseclib\Math\BigInteger->powMod() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/MTProtoTools/AuthKeyHandler.php:292
+[12-Oct-2020 12:12:03 UTC] PHP  32. tgseclib\Math\BigInteger\Engines\PHP64->powMod() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/tgseclib/phpseclib/Math/BigInteger.php:438
+[12-Oct-2020 12:12:03 UTC] PHP  33. tgseclib\Math\BigInteger\Engines\PHP64->powModOuter() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/tgseclib/phpseclib/Math/BigInteger/Engines/PHP64.php:344
+[12-Oct-2020 12:12:03 UTC] PHP  34. tgseclib\Math\BigInteger\Engines\PHP64->powModInner() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/tgseclib/phpseclib/Math/BigInteger/Engines/Engine.php:583
+[12-Oct-2020 12:12:03 UTC] PHP  35. tgseclib\Math\BigInteger\Engines\PHP\Base::powModHelper() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/tgseclib/phpseclib/Math/BigInteger/Engines/PHP.php:970
+[12-Oct-2020 12:12:03 UTC] PHP  36. tgseclib\Math\BigInteger\Engines\Engine::slidingWindow() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/tgseclib/phpseclib/Math/BigInteger/Engines/PHP/Base.php:103
+[12-Oct-2020 12:12:03 UTC] PHP  37. tgseclib\Math\BigInteger\Engines\PHP\Base::squareReduce() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/tgseclib/phpseclib/Math/BigInteger/Engines/Engine.php:637
+[12-Oct-2020 12:12:03 UTC] PHP  38. tgseclib\Math\BigInteger\Engines\PHP\Reductions\EvalBarrett::reduce() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/tgseclib/phpseclib/Math/BigInteger/Engines/PHP/Base.php:147
+[12-Oct-2020 12:12:03 UTC] PHP  39. tgseclib\Math\BigInteger\Engines\PHP\Reductions\EvalBarrett::{closure:phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/tgseclib/phpseclib/Math/BigInteger/Engines/PHP/Reductions/EvalBarrett.php(155) : eval()'d code:1-944}() phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/tgseclib/phpseclib/Math/BigInteger/Engines/PHP/Reductions/EvalBarrett.php:51
+[12-Oct-2020 12:36:23 UTC] Enabled PHP logging
+[12-Oct-2020 12:36:23 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2020 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+API:            	Shutting down MadelineProto (API)
+[12-Oct-2020 12:36:42 UTC] Enabled PHP logging
+[12-Oct-2020 12:36:42 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2020 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+Serialization:  	Waiting for shared lock of serialization lockfile...
+Serialization:  	Shared lock acquired, deserializing...
+API:            	Shutting down MadelineProto (API)
+[12-Oct-2020 12:36:48 UTC] Enabled PHP logging
+[12-Oct-2020 12:36:48 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2020 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+Serialization:  	Waiting for shared lock of serialization lockfile...
+Serialization:  	Shared lock acquired, deserializing...
+API:            	Shutting down MadelineProto (API)
+[12-Oct-2020 12:36:51 UTC] Enabled PHP logging
+[12-Oct-2020 12:36:51 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2020 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+Serialization:  	Waiting for shared lock of serialization lockfile...
+Serialization:  	Shared lock acquired, deserializing...
+API:            	Shutting down MadelineProto (API)
+[12-Oct-2020 12:36:57 UTC] Enabled PHP logging
+[12-Oct-2020 12:36:58 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2020 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+Serialization:  	Waiting for shared lock of serialization lockfile...
+Serialization:  	Shared lock acquired, deserializing...
+API:            	Shutting down MadelineProto (API)
+[12-Oct-2020 12:38:42 UTC] Enabled PHP logging
+[12-Oct-2020 12:38:42 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2020 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+Serialization:  	Waiting for shared lock of serialization lockfile...
+Serialization:  	Shared lock acquired, deserializing...
+Exception:      	unserialize(): Error at offset 323 of 561 bytes in Serialization.php:71
+Serialization:  	\danog\MadelineProto\Exception: unserialize(): Error at offset 323 of 561 bytes in phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/Serialization.php:71
+Revision: 979d7575fc4bdee37c10b3d17fc2be90c3fed88c (AN UPDATE IS REQUIRED)
+TL Trace:
+<br>
+exceptionErrorHandler()<br>
+API.php(134):       	legacyUnserialize()<br>
+__construct_async()<br>
+Coroutine.php(116): 	send()<br>
+Success.php(41):    	danog\MadelineProto\{closure}()<br>
+Coroutine.php(155): 	onResolve()<br>
+Tools.php(397):     	__construct()<br>
+AsyncConstruct.php(93):	call()<br>
+API.php(112):       	setInitPromise()<br>
+Serializable.php(35):	__magic_construct()<br>
+index.php(8):       	__construct()<br>
+View.php(348):      	require("\/home\/daniel\/PhpstormProjects\/oandr\/telegram\/views\/telegram\/index.php")<br>
+View.php(257):      	renderPhpFile()<br>
+View.php(156):      	renderFile()<br>
+Controller.php(409):	render()<br>
+TelegramController.php(24):	render()<br>
+actionIndex()<br>
+InlineAction.php(57):	call_user_func_array()<br>
+Controller.php(180):	runWithParams()<br>
+Module.php(528):    	runAction()<br>
+Application.php(103):	runAction()<br>
+Application.php(386):	handleRequest()<br>
+index.php(12):      	run()
+Tools:          	Loop exceptionally stopped without resolving the promise
+Tools:          	\danog\MadelineProto\Exception: unserialize(): Error at offset 323 of 561 bytes in phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/Serialization.php:71
+Revision: 979d7575fc4bdee37c10b3d17fc2be90c3fed88c (AN UPDATE IS REQUIRED)
+TL Trace:
+<br>
+AbstractAPIFactory.php(164):	initAsynchronously()<br>
+__call_async()<br>
+<br>
+Previous TL trace:<br>
+<br>
+exceptionErrorHandler()<br>
+API.php(134):       	legacyUnserialize()<br>
+__construct_async()<br>
+Coroutine.php(116): 	send()<br>
+Success.php(41):    	danog\MadelineProto\{closure}()<br>
+Coroutine.php(155): 	onResolve()<br>
+Tools.php(397):     	__construct()<br>
+AsyncConstruct.php(93):	call()<br>
+API.php(112):       	setInitPromise()<br>
+Serializable.php(35):	__magic_construct()<br>
+index.php(8):       	__construct()<br>
+View.php(348):      	require("\/home\/daniel\/PhpstormProjects\/oandr\/telegram\/views\/telegram\/index.php")<br>
+View.php(257):      	renderPhpFile()<br>
+View.php(156):      	renderFile()<br>
+Controller.php(409):	render()<br>
+TelegramController.php(24):	render()<br>
+actionIndex()<br>
+InlineAction.php(57):	call_user_func_array()<br>
+Controller.php(180):	runWithParams()<br>
+Module.php(528):    	runAction()<br>
+Application.php(103):	runAction()<br>
+Application.php(386):	handleRequest()<br>
+index.php(12):      	run()
+Exception:      	\danog\MadelineProto\Exception: unserialize(): Error at offset 323 of 561 bytes in phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/Serialization.php:71
+Revision: 979d7575fc4bdee37c10b3d17fc2be90c3fed88c (AN UPDATE IS REQUIRED)
+TL Trace:
+<br>
+AbstractAPIFactory.php(164):	initAsynchronously()<br>
+__call_async()<br>
+<br>
+Previous TL trace:<br>
+<br>
+exceptionErrorHandler()<br>
+API.php(134):       	legacyUnserialize()<br>
+__construct_async()<br>
+Coroutine.php(116): 	send()<br>
+Success.php(41):    	danog\MadelineProto\{closure}()<br>
+Coroutine.php(155): 	onResolve()<br>
+Tools.php(397):     	__construct()<br>
+AsyncConstruct.php(93):	call()<br>
+API.php(112):       	setInitPromise()<br>
+Serializable.php(35):	__magic_construct()<br>
+index.php(8):       	__construct()<br>
+View.php(348):      	require("\/home\/daniel\/PhpstormProjects\/oandr\/telegram\/views\/telegram\/index.php")<br>
+View.php(257):      	renderPhpFile()<br>
+View.php(156):      	renderFile()<br>
+Controller.php(409):	render()<br>
+TelegramController.php(24):	render()<br>
+actionIndex()<br>
+InlineAction.php(57):	call_user_func_array()<br>
+Controller.php(180):	runWithParams()<br>
+Module.php(528):    	runAction()<br>
+Application.php(103):	runAction()<br>
+Application.php(386):	handleRequest()<br>
+index.php(12):      	run()
+[12-Oct-2020 12:38:46 UTC] Enabled PHP logging
+[12-Oct-2020 12:38:47 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2020 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+Serialization:  	Waiting for shared lock of serialization lockfile...
+Serialization:  	Shared lock acquired, deserializing...
+Exception:      	unserialize(): Error at offset 323 of 561 bytes in Serialization.php:71
+Serialization:  	\danog\MadelineProto\Exception: unserialize(): Error at offset 323 of 561 bytes in phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/Serialization.php:71
+Revision: 979d7575fc4bdee37c10b3d17fc2be90c3fed88c (AN UPDATE IS REQUIRED)
+TL Trace:
+<br>
+exceptionErrorHandler()<br>
+API.php(134):       	legacyUnserialize()<br>
+__construct_async()<br>
+Coroutine.php(116): 	send()<br>
+Success.php(41):    	danog\MadelineProto\{closure}()<br>
+Coroutine.php(155): 	onResolve()<br>
+Tools.php(397):     	__construct()<br>
+AsyncConstruct.php(93):	call()<br>
+API.php(112):       	setInitPromise()<br>
+Serializable.php(35):	__magic_construct()<br>
+index.php(8):       	__construct()<br>
+View.php(348):      	require("\/home\/daniel\/PhpstormProjects\/oandr\/telegram\/views\/telegram\/index.php")<br>
+View.php(257):      	renderPhpFile()<br>
+View.php(156):      	renderFile()<br>
+Controller.php(409):	render()<br>
+TelegramController.php(24):	render()<br>
+actionIndex()<br>
+InlineAction.php(57):	call_user_func_array()<br>
+Controller.php(180):	runWithParams()<br>
+Module.php(528):    	runAction()<br>
+Application.php(103):	runAction()<br>
+Application.php(386):	handleRequest()<br>
+index.php(12):      	run()
+Tools:          	Loop exceptionally stopped without resolving the promise
+Tools:          	\danog\MadelineProto\Exception: unserialize(): Error at offset 323 of 561 bytes in phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/Serialization.php:71
+Revision: 979d7575fc4bdee37c10b3d17fc2be90c3fed88c (AN UPDATE IS REQUIRED)
+TL Trace:
+<br>
+AbstractAPIFactory.php(164):	initAsynchronously()<br>
+__call_async()<br>
+<br>
+Previous TL trace:<br>
+<br>
+exceptionErrorHandler()<br>
+API.php(134):       	legacyUnserialize()<br>
+__construct_async()<br>
+Coroutine.php(116): 	send()<br>
+Success.php(41):    	danog\MadelineProto\{closure}()<br>
+Coroutine.php(155): 	onResolve()<br>
+Tools.php(397):     	__construct()<br>
+AsyncConstruct.php(93):	call()<br>
+API.php(112):       	setInitPromise()<br>
+Serializable.php(35):	__magic_construct()<br>
+index.php(8):       	__construct()<br>
+View.php(348):      	require("\/home\/daniel\/PhpstormProjects\/oandr\/telegram\/views\/telegram\/index.php")<br>
+View.php(257):      	renderPhpFile()<br>
+View.php(156):      	renderFile()<br>
+Controller.php(409):	render()<br>
+TelegramController.php(24):	render()<br>
+actionIndex()<br>
+InlineAction.php(57):	call_user_func_array()<br>
+Controller.php(180):	runWithParams()<br>
+Module.php(528):    	runAction()<br>
+Application.php(103):	runAction()<br>
+Application.php(386):	handleRequest()<br>
+index.php(12):      	run()
+Exception:      	\danog\MadelineProto\Exception: unserialize(): Error at offset 323 of 561 bytes in phar:///home/daniel/PhpstormProjects/oandr/telegram/web/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/Serialization.php:71
+Revision: 979d7575fc4bdee37c10b3d17fc2be90c3fed88c (AN UPDATE IS REQUIRED)
+TL Trace:
+<br>
+AbstractAPIFactory.php(164):	initAsynchronously()<br>
+__call_async()<br>
+<br>
+Previous TL trace:<br>
+<br>
+exceptionErrorHandler()<br>
+API.php(134):       	legacyUnserialize()<br>
+__construct_async()<br>
+Coroutine.php(116): 	send()<br>
+Success.php(41):    	danog\MadelineProto\{closure}()<br>
+Coroutine.php(155): 	onResolve()<br>
+Tools.php(397):     	__construct()<br>
+AsyncConstruct.php(93):	call()<br>
+API.php(112):       	setInitPromise()<br>
+Serializable.php(35):	__magic_construct()<br>
+index.php(8):       	__construct()<br>
+View.php(348):      	require("\/home\/daniel\/PhpstormProjects\/oandr\/telegram\/views\/telegram\/index.php")<br>
+View.php(257):      	renderPhpFile()<br>
+View.php(156):      	renderFile()<br>
+Controller.php(409):	render()<br>
+TelegramController.php(24):	render()<br>
+actionIndex()<br>
+InlineAction.php(57):	call_user_func_array()<br>
+Controller.php(180):	runWithParams()<br>
+Module.php(528):    	runAction()<br>
+Application.php(103):	runAction()<br>
+Application.php(386):	handleRequest()<br>
+index.php(12):      	run()
+[12-Oct-2020 12:38:55 UTC] Enabled PHP logging
+[12-Oct-2020 12:38:55 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2020 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+Serialization:  	Waiting for shared lock of serialization lockfile...
+Serialization:  	Shared lock acquired, deserializing...
+API:            	Shutting down MadelineProto (API)
+[12-Oct-2020 12:40:55 UTC] Enabled PHP logging
+[12-Oct-2020 12:40:55 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2020 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+Serialization:  	Waiting for shared lock of serialization lockfile...
+Serialization:  	Shared lock acquired, deserializing...
+API:            	Shutting down MadelineProto (API)
+[12-Oct-2020 12:41:02 UTC] Enabled PHP logging
+[12-Oct-2020 12:41:03 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2020 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+Serialization:  	Waiting for shared lock of serialization lockfile...
+Serialization:  	Shared lock acquired, deserializing...
+API:            	Shutting down MadelineProto (API)
+[12-Oct-2020 12:41:07 UTC] Enabled PHP logging
+[12-Oct-2020 12:41:08 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2020 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+Serialization:  	Waiting for shared lock of serialization lockfile...
+Serialization:  	Shared lock acquired, deserializing...
+API:            	Shutting down MadelineProto (API)
